@@ -10,8 +10,9 @@ const orderRoutes = require('./routes/orders');
 const app = express();
 
 app.use(cors({
-            origin: ['http://localhost:3000', 'https://ai-powerd-e-commerce-chatbot-2qqr75cw6-tavatamvinayaks-projects.vercel.app/'],
-  methods: ['GET,POST','PUT','DELETE']
+            origin:"*"
+  //           origin: ['http://localhost:3000', 'https://ai-powerd-e-commerce-chatbot-2qqr75cw6-tavatamvinayaks-projects.vercel.app/'],
+  // methods: ['GET,POST','PUT','DELETE']
         }));
 app.use(express.json());
 
