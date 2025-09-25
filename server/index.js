@@ -11,7 +11,7 @@ const app = express();
 
 app.use(cors({
             origin:"*"
-  //           origin: ['http://localhost:3000', 'https://ai-powerd-e-commerce-chatbot-2qqr75cw6-tavatamvinayaks-projects.vercel.app/'],
+  //           origin: ['http://localhost:3000'],
   // methods: ['GET,POST','PUT','DELETE']
         }));
 app.use(express.json());
