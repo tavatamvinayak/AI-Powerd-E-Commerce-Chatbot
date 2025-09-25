@@ -21,8 +21,13 @@ mongoose.connect(process.env.MONGODB_URI)
   .catch(err => console.log(err));
 
 app.get('/',(req,res)=>{
-            res.send("server is running E-com")
+      res.redirect("https://ai-powerd-e-commerce-chatbot-g8gy.vercel.app/")
 })
+app.get('/',(req,res)=>{
+      res.json({"message":"server is running"})
+})
+
+
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/orders', orderRoutes);
